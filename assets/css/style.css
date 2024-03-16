@@ -1,18 +1,96 @@
 * {
-    background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    color: rgb(79, 72, 71);
 }
 
-header {
-    background-color: rgb(8, 82, 8);
-    width: auto;
-    height: 10%;
+body {
     margin: 0;
-    color: white;
-    text-align: right;
+}
+
+header,
+footer {
+    width: auto;
+    height: 50px;
+    background-color: rgb(38, 97, 80);
 }
 
 a {
-    background-color: transparent;
+    text-decoration: none;
+}
+
+figcaption {
+    margin: 20px 0px 30px 0px;
+}
+
+fieldset {
+    width: 25%;
+    position: relative;
+    top: 15%;
+    border: 5px solid rgb(221, 175, 148);
+    border-radius: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-footer-text {
+    margin: 0px 15px 0px 15px;
     color: white;
+    position: relative;
+    top: 30%;
+}
+
+.contact-input {
+    width: 60%;
+    margin: 2px;
+}
+
+#image-section {
+    text-align: center;
+    border: solid rgb(221, 175, 148);
+    border-width: 10px 0px 3px 0px;
+}
+
+#contact-form {
+    height: 200px;
+    width: auto;
+    text-align: center;
+    background-color: rgb(232, 206, 191);
+}
+
+#contact-form-title {
+    position: relative;
+    top: 10%;
+    margin: 0;
+}
+
+#contact-form-legend {
+    display: none
+}
+
+#button {
+    width: 110px;
+    height: 35px;
+    background-color: rgb(79, 72, 71);
+    color: white;
+    border-left: 1px solid rgb(118, 118, 118);
+    border-top: 1px solid rgb(118, 118, 118);
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#footer {
+    border-bottom: 10px solid rgb(79, 72, 71);
 }
