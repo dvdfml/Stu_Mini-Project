@@ -1,55 +1,57 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     color: rgb(79, 72, 71);
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
 }
 
-header,
-footer {
-    width: auto;
-    height: 50px;
+header {
+    padding: 15px;
     background-color: rgb(38, 97, 80);
+    border-bottom: 10px solid rgb(221, 175, 148);
+    display: flex;
+    justify-content: end;
 }
 
-a {
+header a {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: white;
     text-decoration: none;
 }
 
 figcaption {
-    margin: 20px 0px 30px 0px;
+    padding: 10px;
 }
 
-fieldset {
-    width: 25%;
-    position: relative;
-    top: 15%;
+form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
     border: 5px solid rgb(221, 175, 148);
     border-radius: 10px;
 }
 
-.text-center {
-    text-align: center;
+form div {
+    width: 100%;
 }
 
-.text-right {
-    text-align: right;
+footer {
+    padding: 1px;
+    background-color: rgb(38, 97, 80);
+    border-bottom: 10px solid rgb(79, 72, 71);
 }
 
-.block-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header-footer-text {
-    margin: 0px 15px 0px 15px;
+footer p {
     color: white;
-    position: relative;
-    top: 30%;
+    text-align: center;
 }
 
 .contact-input {
@@ -57,27 +59,23 @@ fieldset {
     margin: 2px;
 }
 
-#image-section {
+#image {
+    width: 100%;
     text-align: center;
-    border: solid rgb(221, 175, 148);
-    border-width: 10px 0px 3px 0px;
+}
+
+#image-section {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #contact-form {
-    height: 200px;
-    width: auto;
+    padding: 10px;
     text-align: center;
     background-color: rgb(232, 206, 191);
-}
-
-#contact-form-title {
-    position: relative;
-    top: 10%;
-    margin: 0;
-}
-
-#contact-form-legend {
-    display: none
+    border-top: 3px solid rgb(221, 175, 148);
 }
 
 #button {
@@ -91,6 +89,15 @@ fieldset {
     border-bottom: 1px solid black;
 }
 
-#footer {
-    border-bottom: 10px solid rgb(79, 72, 71);
-}
+
+@media screen and (max-width: 450px) {
+    img {
+        /* display: none; */
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #button {
+        width: 100%;
+    }
